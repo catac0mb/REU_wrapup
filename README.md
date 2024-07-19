@@ -9,8 +9,8 @@
 
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
 The Minicity 3D models I have created are located in the following Google Drive folders:
-1. RoadRunner model:
-2. Unreal Engine model:
+1. RoadRunner model
+2. Unreal Engine model
 
 A guide for creating custom maps for CARLA simulator is located [here](https://docs.google.com/document/d/1nGkW9r-JUrX9DzVkiATIxvYBm__sEEYetNbHLP2ewoU/edit#heading=h.j5jq9pdnhxqd), including information and instructions about exporting from RoadRunner and importing to CARLA.
 
