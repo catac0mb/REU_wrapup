@@ -6,7 +6,7 @@ This repository contains files, links, and information about the following:
 3. 3D Modeling with RoadRunner and the CARLA version of Unreal Engine
 
 ## LaneNet Training for Intersections
-There are now two datasets for LaneNet training for right and left turns at intersections. The right turn dataset contains 359 files, and the left turn dataset contains 330 files. Zip files containing both datasets are located [here](https://drive.google.com/drive/folders/10LKjktFrEe_lrjv4_TwvhQ9-Pzauom9r?usp=sharing), along with their corresponding csv files.
+There are now two datasets for LaneNet training for right and left turns at intersections. The right turn dataset contains 359 files, and the left turn dataset contains 330 files. Zip files containing both datasets are located [here](https://drive.google.com/drive/folders/10LKjktFrEe_lrjv4_TwvhQ9-Pzauom9r?usp=sharing), along with their corresponding csv files and their trained models. Training was cut off when mIoU and loss reached diminishing returns.
 
 ## Updates to v-e2e-rl-ad
 
