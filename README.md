@@ -74,6 +74,7 @@ RoadRunner has an issue with the foliage looking off when importing to Unreal.
 
 ### Adding Traffic Lights
 The RoadRunner traffic lights might not export the way you want them to.
+Adding a single light may cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup.
 
 ### Adding Props
 
