@@ -13,9 +13,9 @@ This repository contains files, links, and information about the following:
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
 Minicity models:
 1. RoadRunner model: located in this repository: one folder for the .fbx, .xodr, .geojson, and .xml files, and one folder for the textures. Place all individual files in one folder if importing to CARLA.
-2. Unreal Engine model: located in [this](https://drive.google.com/drive/folders/1HhIVrCdbJjaO0kRxdaTD4fU77Qvprjs-?usp=drive_link) Google Drive folder. Refer to the Export Guide to see where it should be placed in the CARLA source build folder.
+2. Unreal Engine model: this model is very large. Please refer to the export guide below to export the RoadRunner files to the carla version of Unreal Engine and make any adjustments: adding traffic lights, props, or trees, changing the buildings to more realistic ones, etc.
 
-A guide for creating custom maps for CARLA simulator is located [here](https://docs.google.com/document/d/1nGkW9r-JUrX9DzVkiATIxvYBm__sEEYetNbHLP2ewoU/edit#heading=h.j5jq9pdnhxqd), including information and instructions about exporting 3D models from RoadRunner and importing to CARLA.
+A guide for creating custom maps for CARLA simulator is located [here](https://docs.google.com/document/d/1nGkW9r-JUrX9DzVkiATIxvYBm__sEEYetNbHLP2ewoU/edit#heading=h.j5jq9pdnhxqd), including information and instructions about exporting 3D models from RoadRunner and importing to CARLA. The same information is also included below.
 
 
 ## Custom Map Creation and Import/Export Guide
