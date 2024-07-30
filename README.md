@@ -6,7 +6,10 @@ This repository contains files, links, and information about the following:
 3. 3D Modeling with RoadRunner and the CARLA version of Unreal Engine, including Minicity model
 
 ## LaneNet Training for Intersections
-There are now two datasets for LaneNet training for right and left turns at intersections. The right turn dataset contains 359 files, and the left turn dataset contains 330 files. Zip files containing both datasets are located [here](https://drive.google.com/drive/folders/10LKjktFrEe_lrjv4_TwvhQ9-Pzauom9r?usp=sharing), along with their corresponding csv files and their trained models. It was trained on images from various CARLA Simulator maps: Town03, Town04, and Town05, as well as the custom MiniCity map (without props or trees). Training was cut off when mIoU and loss reached diminishing returns.
+There are now two datasets for LaneNet training for right and left turns at intersections. 
+* The right turn dataset contains 359 files, and the left turn dataset contains 330 files.
+* Zip files containing both datasets are located [here](https://drive.google.com/drive/folders/10LKjktFrEe_lrjv4_TwvhQ9-Pzauom9r?usp=sharing), along with their corresponding csv files and their trained models.
+* The models were trained on images from various CARLA Simulator maps: Town03, Town04, and Town05, as well as the custom MiniCity map (without props or trees). Training was cut off when mIoU and loss reached diminishing returns.
 
 ## Updates to v-e2e-rl-ad
 The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/catac0mb/v-e2e-rl-ad). Notable changes are listed below.
