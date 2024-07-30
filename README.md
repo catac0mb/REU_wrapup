@@ -5,7 +5,7 @@ This repository contains files, links, and information about the following:
 2. [Updates to Owen Ma's v-e2e-rl-ad repository](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#updates-to-v-e2e-rl-ad)
 3. [3D Modeling with RoadRunner and the CARLA version of Unreal Engine, including Minicity model](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#3d-modeling-with-roadrunner-and-carla-unreal-engine)
    * [Minicity model](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#3d-modeling-with-roadrunner-and-carla-unreal-engine)
-   * [Exporting/Importing RoadRunner model]()
+   * [Custom map creation and exporting/importing RoadRunner models](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#custom-map-creation-and-importexport-guide)
    * [3D Modeling in Carla Unreal](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#3d-modeling-in-unreal-engine)
 
 ## LaneNet Training for Intersections
