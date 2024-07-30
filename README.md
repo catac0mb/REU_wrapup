@@ -15,7 +15,7 @@ There are now two datasets for LaneNet training for right and left turns at inte
 * The models were trained on images from various CARLA Simulator maps: Town03, Town04, and Town05, as well as the custom MiniCity map (without props or trees). Training was cut off when mIoU and loss reached diminishing returns.
 
 ## Updates to v-e2e-rl-ad
-The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/catac0mb/v-e2e-rl-ad). Notable changes are listed below.
+The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/catac0mb/v-e2e-rl-ad). Notable changes are listed below. The poster file in this repository also contains visuals for some of the topics listed below.
 1. Lane detectors:
    * The models mentioned in the above section were added to the log folder in lanenet_lane_detection_pytorch folder, and were incorporated in the CarlaEnv class. 
 2. LaneNet training and data creation code:
