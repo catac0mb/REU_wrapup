@@ -10,9 +10,9 @@ There are now two datasets for LaneNet training for right and left turns at inte
 
 ## Updates to v-e2e-rl-ad
 The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/catac0mb/v-e2e-rl-ad). Notable changes are listed below.
-Map: the map was changed to Town05 because it has many more intersections. The challenge spawn points for curved lane following in carlaRL_env were altered accordingly, as well as the straight spawn location. A list of spawn points that lead to intersections was also added.
-Lane detectors: The models mentioned in the above section were added to the log folder in lanenet_lane_detection_pytorch folder, and were incorporated in the CarlaEnv class. 
-LaneNet training and data creation code: the code in the lanenet_lane_detection_pytorch folder seems to use the TuSimple dataset and json file instead of the methods described in [this](https://docs.google.com/document/d/1EXU5jXaEKWgqxBsn6C817SnIB1FmI7IcWZgUivV2DjU/edit) document. I added a new folder with the code from [this](https://github.com/David-Brodsky/LaneNet-Train) repository, which I believe is the code this lab used to train LaneNet, for convenience.
+1. Map: the map was changed to Town05 because it has many more intersections. The challenge spawn points for curved lane following in carlaRL_env were altered accordingly, as well as the straight spawn location. A list of spawn points that lead to intersections was also added.
+2. Lane detectors: The models mentioned in the above section were added to the log folder in lanenet_lane_detection_pytorch folder, and were incorporated in the CarlaEnv class. 
+3. LaneNet training and data creation code: the code in the lanenet_lane_detection_pytorch folder seems to use the TuSimple dataset and json file instead of the methods described in [this](https://docs.google.com/document/d/1EXU5jXaEKWgqxBsn6C817SnIB1FmI7IcWZgUivV2DjU/edit) document. I added a new folder with the code from [this](https://github.com/David-Brodsky/LaneNet-Train) repository, which I believe is the code this lab used to train LaneNet, for convenience.
 
 
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
