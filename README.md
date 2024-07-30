@@ -43,6 +43,7 @@ The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/cat
     * I had originally planned to have the model learn to lane change based on if right or left turn is coming next in the plan and if a lane change is legal/possible in that direction. The code in my fork has a simpler model that I ended up experimenting with towards the end.
     * Please refer to [this](https://github.com/catac0mb/v-e2e-rl-ad_2_command/tree/main) v-e2e-rl-ad_2_command repository if you would like to see my prelimary lane changing code there.
     * A new LaneNet model might also need to be created to recognize dotted lane markings and solid markings.
+9. Saving the model: the model now saves every 500 episodes as well as whenever the maximum episode reward is updated
    
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
 Minicity models:
