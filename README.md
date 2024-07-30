@@ -18,27 +18,27 @@ There are now two datasets for LaneNet training for right and left turns at inte
 The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/catac0mb/v-e2e-rl-ad). Notable changes are listed below.
 1. Lane detectors:
    * The models mentioned in the above section were added to the log folder in lanenet_lane_detection_pytorch folder, and were incorporated in the CarlaEnv class. 
-3. LaneNet training and data creation code:
+2. LaneNet training and data creation code:
    * The code in the lanenet_lane_detection_pytorch folder seems to use the TuSimple dataset and json file instead of the methods described in [this](https://docs.google.com/document/d/1EXU5jXaEKWgqxBsn6C817SnIB1FmI7IcWZgUivV2DjU/edit) document.
    * I added a new folder DavidBrodsky_Lanenet with the code from [this](https://github.com/David-Brodsky/LaneNet-Train) repository, which I believe is the code this lab used to train LaneNet, for convenience.
-5. Map:
+3. Map:
    * The map was changed to Town05 because it has many more intersections.
    * The challenge spawn points for curved lane following in carlaRL_env were altered accordingly, as well as the straight spawn location.
    * A list of spawn points that lead to intersections was also added.
-7. High-level planning:
+4. High-level planning:
    * A class for generating a high-level plan was added to alt_global_route_planner (as well as the carlaRL_env file to resolve import difficulties). The plan is given a start location and goal location, and generates tuples in the form [location, command].
    * The plan is very limited to encourage autonomous behavior: there is a tuple for the start location, a tuple at every point where the car needs to turn right or left at an intersection, an additional tuple with a new lane following command whenever the car exits an intersection after turning, and a tuple for the goal position.
    * The commands are all either Lanefollow (1), Left (0), or Right (2), and have a corresponding location for where the car needs to start executing each command. Once the car reaches the next location in the plan, the previous tuple is removed and the next command is observed.
-9. PPO agent:
+5. PPO agent:
     * The agent now takes in the current command as part of the state, which is then put into both the Actor and Critic models.
     * The commands are currently represented by integers 0-2 as outlined above, which are put through simple embedding and linear layers. The command tensor is then concatenated with the image tensor before the fully connected layers.
-11. Reward function: the reward function is currently very simple.
+6. Reward function: the reward function is currently very simple.
     * A negative constant -1 is added if a collision occurs, 0 otherwise.
     * The reward function currently also takes lateral distance from a target waypoint and distance from target steer into account.
-12. NaN detection:
+7. NaN detection:
     * Previously, NaN's were occuring during image normalization steps when the LaneNet model would output an all-black image. This might have happened due to the change in map, where lane detection is very challenging in some areas.
     * I added some alternate normalization to handle the case where the min and max values in the output image are the same.
-14. Lane changing:
+8. Lane changing:
     * I have also added a method for future lane change implementation. There is a method to detect if a lane change is legal, but the CARLA python API can sometimes return an incorrect truth value.
     * I had originally planned to have the model learn to lane change based on if right or left turn is coming next in the plan and if a lane change is legal/possible in that direction. The code in my fork has a simpler model that I ended up experimenting with towards the end.
     * Please refer to the v-e2e-rl-ad_2_command folder in this repository if you would like to see my prelimary lane changing code there.
