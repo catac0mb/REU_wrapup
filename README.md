@@ -37,7 +37,7 @@ The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/cat
     * The reward function currently also takes lateral distance from a target waypoint and distance from target steer into account.
 7. NaN detection:
     * Previously, NaN's were occuring during image normalization steps when the LaneNet model would output an all-black image. This might have happened due to the change in map, where lane detection is very challenging in some areas.
-    * I added some alternate normalization to handle the case where the min and max values in the output image are the same.
+    * I added some additional normalization code to handle the case where the min and max values in the output image are the same.
 8. Lane changing:
     * I have also added a method for future lane change implementation. There is a method to detect if a lane change is legal, but the CARLA python API can sometimes return an incorrect truth value.
     * I had originally planned to have the model learn to lane change based on if right or left turn is coming next in the plan and if a lane change is legal/possible in that direction. The code in my fork has a simpler model that I ended up experimenting with towards the end.
