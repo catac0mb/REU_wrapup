@@ -41,7 +41,7 @@ The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/cat
 8. Lane changing:
     * I have also added a method for future lane change implementation. There is a method to detect if a lane change is legal, but the CARLA python API can sometimes return an incorrect truth value.
     * I had originally planned to have the model learn to lane change based on if right or left turn is coming next in the plan and if a lane change is legal/possible in that direction. The code in my fork has a simpler model that I ended up experimenting with towards the end.
-    * Please refer to the v-e2e-rl-ad_2_command folder in this repository if you would like to see my prelimary lane changing code there.
+    * Please refer to [this](https://github.com/catac0mb/v-e2e-rl-ad_2_command/tree/main) v-e2e-rl-ad_2_command repository if you would like to see my prelimary lane changing code there.
     * A new LaneNet model might also need to be created to recognize dotted lane markings and solid markings.
    
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
