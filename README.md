@@ -1,7 +1,7 @@
 # REU_wrapup
 
 This repository contains files, links, and information about the following:
-1. Additional datasets and LaneNet training for right and left turns at intersections
+1. [Additional datasets and LaneNet training for right and left turns at intersections](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#lanenet-training-for-intersections)
 2. [Updates to Owen Ma's v-e2e-rl-ad repository](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#updates-to-v-e2e-rl-ad)
 3. [3D Modeling with RoadRunner and the CARLA version of Unreal Engine, including Minicity model](https://github.com/catac0mb/REU_wrapup/blob/main/README.md#3d-modeling-with-roadrunner-and-carla-unreal-engine)
 
