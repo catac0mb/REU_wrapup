@@ -15,7 +15,8 @@ The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/cat
 3. Map: the map was changed to Town05 because it has many more intersections. The challenge spawn points for curved lane following in carlaRL_env were altered accordingly, as well as the straight spawn location. A list of spawn points that lead to intersections was also added.
 4. High-level planning: a class for generating a high-level plan was added to alt_global_route_planner (as well as the carlaRL_env file to resolve import difficulties). The plan is given a start location and goal location, and generates tuples in the form [location, command].
    * The plan is very limited to encourage autonomous behavior: there is a tuple for the start location, a tuple at every point where the car needs to turn right or left at an intersection, an additional tuple with a new lane following command whenever the car exits an intersection after turning, and a tuple for the goal position.
-   * The commands are all either Lanefollow (1), Left (0), or Right(2), and have a corresponding location for where the car needs to start executing each command. Once the car reaches the next location in the plan, the previous tuple is removed and the next command is observed.
+   * The commands are all either Lanefollow (1), Left (0), or Right (2), and have a corresponding location for where the car needs to start executing each command. Once the car reaches the next location in the plan, the previous tuple is removed and the next command is observed.
+5. PPO agent: the agent now takes in the current command as part of the state, which is then put into both the Actor and Critic models. The commands are currently represented by integers 0-2 as outlined above, which are put through simple embedding and linear layers. The command tensor is then concatenated with the image tensor before the fully connected layers.
 
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
 Minicity models:
