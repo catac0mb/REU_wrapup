@@ -108,7 +108,7 @@ You may want to make adjustments to the model to make it more realistic and incl
 There is a tab at the bottom of the screen of Unreal called the Content Browser. Not only do you navigate here for maps, but you can also bring additional meshes and materials through this window. The guide below contains information about how to navigate through the browser for specific objects.
 
 ### Moving and Rotating Objects
-Click on an object to begin changing its position. You can alternate between moving your object and rotating your object by pressing the space bar. Either 3 red, green, and blue arrows or circles will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z circle to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle.
+Click on an object to begin changing its position. You can alternate between moving your object and rotating your object by pressing the space bar. Either 3 red, green, and blue arrows or arcs will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z arc to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle.
 
 ### Changing Buildings
 The RoadRunner buildings are not very realistic. To replace them with Unreal Engine's building meshes and textures, follow the guide below.
