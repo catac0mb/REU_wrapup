@@ -106,18 +106,24 @@ Once you have imported your map into CARLA, you can add additional elements to i
 ## 3D Modeling in Unreal Engine
 You may want to make adjustments to the model to make it more realistic and include things like traffic lights, props, or trees. If you want to add more roads or change the road network, it is recommended to do that in RoadRunner and then import it to Unreal.
 
+### Moving and Rotating Objects
+Click on an object to begin changing its position. You can alternate between moving your object and rotating your object by pressing the space bar. Either 3 red, green, and blue arrows or circles will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z circle to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle.
+
 ### Changing Buildings
 The RoadRunner buildings are not very realistic. To replace them with Unreal Engine's building meshes and textures, follow the guide below.
 
-### Adding Trees
-RoadRunner has an issue with the foliage looking off when importing to Unreal.
+To remove RoadRunner buildings, simply click on the buidling meshes and hit delete until all parts of the mesh are gone.
+To add more realistic Unreal Engine buildings, go to the content browser at the bottom of the screen of Unreal Engine. Navigate to Content > Carla > Static > Building.
+There are meshes for many styles of buildings. Drag an element into your map from the content browser and rotate and/or move them.
 
 ### Adding Traffic Lights
 The RoadRunner traffic lights might not export the way you want them to.
-Adding a single light may cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup.
+Adding a single light can cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup. You can find the file in Content > Carla > Static > Traffic > TrafficLight > Streetlights_01. 
 
 ### Adding Props
+You can find many different props in the folders in Content > Carla > Static and in Content > Carla > Static > Static. Drag an object from the content browser into the Unreal scene and move or rotate as desired.
 
-
-
-
+### Adding Trees
+RoadRunner has an issue importing foliage to Unreal. 
+To add trees and bushes in Unreal, navigate to the vegetation folder in the CARLA content library: Content > Carla > Static > Vegetation. 
+There are meshes for multiple types of trees, bushes, shrubs. Drag an element into your map from the content browser and rotate and/or move them. 
