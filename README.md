@@ -104,6 +104,10 @@ Once you have imported your map into CARLA, you can add additional elements to i
 ## 3D Modeling in Unreal Engine
 You may want to make adjustments to the model to make it more realistic and include things like traffic lights, props, or trees. If you want to add more roads or change the road network, it is recommended to do that in RoadRunner and then import it to Unreal. If you must make road marking changes in Unreal, follow [this](https://carla.readthedocs.io/en/0.9.15/tuto_content_authoring_maps/) guide.  ![Modeling_Unreal](3D_modeling_guide/Modeling_Unreal.png)
 
+### Moving the Camera
+To rotate the camera, hold down the right mouse button and move the mouse.
+To move the camera, hold down the right mouse button and use the WASD keys.
+
 ### The Content Browser
 There is a tab at the bottom of the screen of Unreal called the Content Browser. Not only do you navigate here for maps, but you can also bring additional meshes and materials through this window. The guide below contains information about how to navigate through the browser for specific objects.
 
