@@ -113,7 +113,7 @@ Click on an object to begin changing its position. You can alternate between mov
 ### Changing Buildings
 The RoadRunner buildings are not very realistic. To replace them with Unreal Engine's building meshes and textures, follow the guide below.
 
-To remove RoadRunner buildings, simply click on the buidling meshes and hit delete until all parts of the mesh are gone. ![Delete_building](3D_modeling_guide/Delete_building.png) ![Delete_building_2](3D_modeling_guide/Delete_building_2.png)
+To remove RoadRunner buildings, click on the buidling meshes and hit backspace until all parts of the mesh are gone. ![Delete_building](3D_modeling_guide/Delete_building.png) ![Delete_building_2](3D_modeling_guide/Delete_building_2.png)
 To add more realistic Unreal Engine buildings, go to the content browser at the bottom of the screen of Unreal Engine. Navigate to Content > Carla > Static > Building.
 There are meshes for many styles of buildings. Drag an element into your map from the content browser and rotate and/or move them. ![Add_building](3D_modeling_guide/Add_building.png)
 
