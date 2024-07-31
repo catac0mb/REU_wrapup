@@ -95,7 +95,7 @@ Once you have exported your files from RoadRunner, place the .xodr, .fbx, and ma
      make launch
 ```
 
-2. Open the “map packages” folder in the content folder at the bottom of the screen of Unreal Engine. Go to Content/map_package/maps and open the folder with the name of your map.
+2. Open the “map packages” folder in the Content Browser at the bottom of the screen of Unreal Engine. Go to content > map_package > maps and open the folder with the name of your map.
 3. Double click on your map file. It should be an icon with gray map geometries on it and an orange bar at the bottom. If you hover over it, it should be labeled yourmapname (level) to indicate that it is a map file.
 4. After double clicking, the map should be generated on the map with its textures. This may take several minutes.
 
@@ -103,6 +103,9 @@ Once you have imported your map into CARLA, you can add additional elements to i
 
 ## 3D Modeling in Unreal Engine
 You may want to make adjustments to the model to make it more realistic and include things like traffic lights, props, or trees. If you want to add more roads or change the road network, it is recommended to do that in RoadRunner and then import it to Unreal. If you must make road marking changes in Unreal, follow [this](https://carla.readthedocs.io/en/0.9.15/tuto_content_authoring_maps/) guide.
+
+### The Content Browser
+There is a tab at the bottom of the screen of Unreal called the Content Browser. Not only do you navigate here for maps, but you can also bring additional meshes and materials through this window. The guide below contains information about how to navigate through the browser for specific objects.
 
 ### Moving and Rotating Objects
 Click on an object to begin changing its position. You can alternate between moving your object and rotating your object by pressing the space bar. Either 3 red, green, and blue arrows or circles will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z circle to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle.
