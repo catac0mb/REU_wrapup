@@ -87,7 +87,7 @@ In the folder with the exported files, ensure that the textures/materials used i
 
 
 ### Importing a Custom Map to CARLA Unreal Engine
-Once you have exported your files from RoadRunner, place the .xodr, .fbx, and materials files in the “Import” folder located in the carla root folder on your machine. The .geojson and .xml files should not be needed. Ensure that the .xodr and .fbx files have the same name and that no map files in the Unreal content browser already have this name.
+Once you have exported your files from RoadRunner, place the .xodr, .fbx, and materials files in the “Import” folder located in the carla root folder on your machine. Do not put any of these files into an additional folder inside of "Import". The .geojson and .xml files should not be needed. Ensure that the .xodr and .fbx files have the same name and that no map files in the Unreal content browser already have this name.
 
 1. Run the following commands in the carla root folder to import your model and launch Unreal Engine. The import process may take seveal minutes:
 ```Shell
