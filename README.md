@@ -96,35 +96,35 @@ Once you have exported your files from RoadRunner, place the .xodr, .fbx, and ma
 ```
 
 2. Open the “map packages” folder in the Content Browser at the bottom of the screen of Unreal Engine. Go to content > map_package > maps and open the folder with the name of your map.
-3. Double click on your map file. It should be an icon with gray map geometries on it and an orange bar at the bottom. If you hover over it, it should be labeled yourmapname (level) to indicate that it is a map file.
+3. Double click on your map file. It should be an icon with gray map geometries on it and an orange bar at the bottom. If you hover over it, it should be labeled yourmapname (level) to indicate that it is a map file. ![Map_location](3D_modeling_guide/Map_location.png)
 4. After double clicking, the map should be generated on the map with its textures. This may take several minutes.
 
 Once you have imported your map into CARLA, you can add additional elements to it using the Unreal Engine interface. Make sure to save as you make changes, and keep multiple versions.
 
 ## 3D Modeling in Unreal Engine
-You may want to make adjustments to the model to make it more realistic and include things like traffic lights, props, or trees. If you want to add more roads or change the road network, it is recommended to do that in RoadRunner and then import it to Unreal. If you must make road marking changes in Unreal, follow [this](https://carla.readthedocs.io/en/0.9.15/tuto_content_authoring_maps/) guide.
+You may want to make adjustments to the model to make it more realistic and include things like traffic lights, props, or trees. If you want to add more roads or change the road network, it is recommended to do that in RoadRunner and then import it to Unreal. If you must make road marking changes in Unreal, follow [this](https://carla.readthedocs.io/en/0.9.15/tuto_content_authoring_maps/) guide.  ![Modeling_Unreal](3D_modeling_guide/Modeling_Unreal.png)
 
 ### The Content Browser
 There is a tab at the bottom of the screen of Unreal called the Content Browser. Not only do you navigate here for maps, but you can also bring additional meshes and materials through this window. The guide below contains information about how to navigate through the browser for specific objects.
 
 ### Moving and Rotating Objects
-Click on an object to begin changing its position. You can alternate between moving your object and rotating your object by pressing the space bar. Either 3 red, green, and blue arrows or arcs will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z arc to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle.
+Click on an object to begin changing its position. You can alternate between moving, rotating, and scaling your object by pressing the space bar. 3 red, green, and blue arrows, arcs, or cubes will pop up. You can drag the x, y, or z arrow to move the object or drag the x, y, or z arc to rotate it. The rotation will snap to 90, 180, and 270 degrees as you drag the circle. ![Rotate_building](3D_modeling_guide/Rotate_building.png)
 
 ### Changing Buildings
 The RoadRunner buildings are not very realistic. To replace them with Unreal Engine's building meshes and textures, follow the guide below.
 
-To remove RoadRunner buildings, simply click on the buidling meshes and hit delete until all parts of the mesh are gone.
+To remove RoadRunner buildings, simply click on the buidling meshes and hit delete until all parts of the mesh are gone. ![Delete_building](3D_modeling_guide/Delete_building.png) ![Delete_building_2](3D_modeling_guide/Delete_building_2.png)
 To add more realistic Unreal Engine buildings, go to the content browser at the bottom of the screen of Unreal Engine. Navigate to Content > Carla > Static > Building.
-There are meshes for many styles of buildings. Drag an element into your map from the content browser and rotate and/or move them.
+There are meshes for many styles of buildings. Drag an element into your map from the content browser and rotate and/or move them. ![Add_building](3D_modeling_guide/Add_building.png)
 
 ### Adding Traffic Lights
 The RoadRunner traffic lights might not export the way you want them to.
 Adding a single light can cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup. You can find the file in Content > Carla > Static > Traffic > TrafficLight > Streetlights_01. 
 
 ### Adding Props
-You can find many different props in the folders in Content > Carla > Static and in Content > Carla > Static > Static. Drag an object from the content browser into the Unreal scene and move or rotate as desired.
+You can find many different props in the folders in Content > Carla > Static and in Content > Carla > Static > Static. Drag an object from the content browser into the Unreal scene and move or rotate as desired. ![Add_prop](3D_modeling_guide/Add_prop.png)
 
 ### Adding Trees
 RoadRunner has an issue importing foliage to Unreal. 
 To add trees and bushes in Unreal, navigate to the vegetation folder in the CARLA content library: Content > Carla > Static > Vegetation. 
-There are meshes for multiple types of trees, bushes, shrubs. Drag an element into your map from the content browser and rotate and/or move them. 
+There are meshes for multiple types of trees, bushes, shrubs. Drag an element into your map from the content browser and rotate and/or move them. ![Add_trees](3D_modeling_guide/Add_trees.png)
