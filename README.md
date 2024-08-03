@@ -54,7 +54,7 @@ The updated fork of Owen's original v-e2e-rl-ad is [here](https://github.com/cat
 ## 3D Modeling with RoadRunner and CARLA Unreal Engine
 Minicity models:
 1. RoadRunner model: located in this repository: one folder for the .fbx, .xodr, .geojson, and .xml files, and one folder for the textures. Place all individual files in one folder if importing to CARLA.
-2. Unreal Engine model: this model is very large. Please refer to the export guide below to export the RoadRunner files to the carla version of Unreal Engine and make any adjustments: adding traffic lights, props, or trees, changing the buildings to more realistic ones, etc.
+2. Unreal Engine model: this model is too large to upload to Github. Please refer to the export guide below to export the RoadRunner files to the carla version of Unreal Engine and make any adjustments: adding traffic lights, props, or trees, changing the buildings to more realistic ones, etc. The MiniCity model in Unreal Engine is also on the server in the lab: ![Minicity_model](3D_modeling_guide/Minicity_model.png)
 
 Please see the guide below for creating custom maps for CARLA simulator, and for information and instructions about exporting 3D models from RoadRunner and importing to CARLA. There is also a small guide for making your map more realistic once you have imported your RoadRunner map.
 
