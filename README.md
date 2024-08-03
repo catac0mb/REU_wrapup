@@ -123,7 +123,7 @@ There are meshes for many styles of buildings. Drag an element into your map fro
 
 ### Adding Traffic Lights
 The RoadRunner traffic lights might not export the way you want them to.
-Adding a single light can cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup. You can find the file in Content > Carla > Static > Traffic > TrafficLight > Streetlights_01. 
+Adding a single light can cause the server to crash. Please follow the directions [here](https://carla.readthedocs.io/en/latest/tuto_M_custom_add_tl/) and create a junction of multiple lights with BP_TrafficLightGroup. You can find the file in Content > Carla > Static > TrafficLight > Streetlights_01. 
 
 ### Adding Props
 You can find many different props in the folders in Content > Carla > Static and in Content > Carla > Static > Static. Drag an object from the content browser into the Unreal scene and move or rotate as desired. ![Add_prop](3D_modeling_guide/Add_prop.png)
